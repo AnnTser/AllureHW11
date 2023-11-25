@@ -19,8 +19,8 @@ public class WebSteps {
 
     @Step("Ищем репозиторий {repo}")
     public void searchForRepository(String repo) {
-            $("[data-target='qbsearch-input.inputButtonText']").click();
-            $("#query-builder-test").setValue(repo).pressEnter();
+        $("[data-target='qbsearch-input.inputButtonText']").click();
+        $("#query-builder-test").setValue(repo).pressEnter();
     }
 
     @Step("Кликаем по ссылке репозитория {repo}")

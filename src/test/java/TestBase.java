@@ -14,6 +14,7 @@ public class TestBase {
     }
     @AfterAll
     static void afterAll() {
+
         Selenide.closeWebDriver();
     }
 
