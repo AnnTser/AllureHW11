@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.openqa.selenium.By.linkText;
 
-public class WithLambdaStepsTest extends TestBase {
+public class WithLambdaStepsTest  {
     private static final String REPOSITORY = "eroshenkoam/allure-example";
     private static final int ISSUE = 84;
 

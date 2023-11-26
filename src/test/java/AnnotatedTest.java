@@ -2,7 +2,7 @@ import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class AnnotatedTest extends TestBase {
+public class AnnotatedTest {
     @Test
     @Feature("Issue в репозитории")
     @Story("Создание Issue")

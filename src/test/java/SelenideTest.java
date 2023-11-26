@@ -9,18 +9,12 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
-public class SelenideTest extends TestBase {
-    @BeforeEach
-    public void setUp() {
-        open("https://github.com");
-
-    }
+public class SelenideTest {
 
     @Test
     public void issueSearchTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-
-
+        open("https://github.com");
         $("[data-target='qbsearch-input.inputButtonText']").click();
         $("#query-builder-test").setValue("eroshenkoam/allure-example").pressEnter();
         $(linkText("eroshenkoam/allure-example")).click();
